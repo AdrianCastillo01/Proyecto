@@ -190,33 +190,24 @@ public class Tienda extends JFrame implements ActionListener {
 			actionPerformedMntmNewMenuItem(e);
 		}
 		
+		
 	}
+	
 	protected void actionPerformedMntmNewMenuItem(ActionEvent e) {
 		
-		
-		
-		
+		dispose();
 		
 	}
 	
 	protected void actionPerformedMntmConsultarCeramico(ActionEvent e) {
 		
-		//declaraciÛn para invocar la variable est·tica consultcer que est· en GuiConsultarCer·mico
+		//declaraci√≥n para invocar la variable est√°tica consultcer que est√° en GuiConsultarCer√°mico
 		String p=GuiConsultarCeramico.concer;
 		if(p==null) {
 			GuiConsultarCeramico concer=new GuiConsultarCeramico();
 			escritorio.add(concer);
 			concer.setVisible(true);
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 	}
@@ -259,72 +250,59 @@ public class Tienda extends JFrame implements ActionListener {
 		
 	}
 	protected void actionPerformedMntmConfigDescuentos(ActionEvent e) {
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		String p=ConfigurarDescuentos.configdes;
+		if(p==null) {
+			ConfigurarDescuentos configdes=new ConfigurarDescuentos();
+			escritorio.add(configdes);
+			configdes.setVisible(true);}
+	
 		
 		
 	}
 	protected void actionPerformedMntmConfigObsequios(ActionEvent e) {
+		String p=ConfigurarObsequios.configobs;
+		if(p==null) {
+			ConfigurarObsequios configobs=new ConfigurarObsequios();
+			escritorio.add(configobs);
+			configobs.setVisible(true);}	
+	    
+		}
 		
 		
+
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
+	
 	protected void actionPerformedMntmConfigCantidadOptima(ActionEvent e) {
 		
+		String p=ConfigurarCantOpt.configcantot;
+		if(p==null) {
+			ConfigurarCantOpt configcantot=new ConfigurarCantOpt();
+			escritorio.add(configcantot);
+			configcantot.setVisible(true);
+			}
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 	}
 	protected void actionPerformedMntmConfigCuotaDiaria(ActionEvent e) {
+		String p=ConfigCuotaDiaria.configcuota;
+		if(p==null) {
+			ConfigCuotaDiaria configcuota=new ConfigCuotaDiaria();
+			escritorio.add(configcuota);
+			configcuota.setVisible(true);
+		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
 	}
 	
 	protected void actionPerformedMntmAcercaTienda(ActionEvent e) {
+		String p=AcercadeTienda.acercade;
+		if(p==null) {
+			AcercadeTienda acercade=new AcercadeTienda();
+			escritorio.add(acercade);
+			acercade.setVisible(true);
+		}
 	}
 }
