@@ -55,6 +55,7 @@ public class ConfigurarObsequios extends JInternalFrame implements ActionListene
 	 * Create the frame.
 	 */
 	public ConfigurarObsequios() {
+		setClosable(true);
 		setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
 		setTitle("Configurar Obsequios");
 		setBounds(100, 100, 375, 191);
@@ -119,13 +120,13 @@ public class ConfigurarObsequios extends JInternalFrame implements ActionListene
 		alertPane.setLayout((LayoutManager) new FlowLayout(FlowLayout.RIGHT));
 		getContentPane().add(alertPane, BorderLayout.SOUTH);}
 	{
-	listarObsequios();	
+	Obsequios();	
 	}
 	}
 	
 
     
-	void listarObsequios() {
+	void Obsequios() {
 		txtObsequio.setText(String.valueOf(constants.tipoObsequio));
 		txtCant1.setText(String.valueOf (constants.obsequioCantidad1));
 		txtCant2.setText(String.valueOf(constants.obsequioCantidad2));
@@ -142,7 +143,7 @@ public class ConfigurarObsequios extends JInternalFrame implements ActionListene
 		}
 		
 	}
-	void grabar() {
+	void cambiar() {
 		constants.tipoObsequio=txtObsequio.getText();
 		constants.obsequioCantidad1=Integer.parseInt(txtCant1.getText());
 		constants.obsequioCantidad2=Integer.parseInt(txtCant2.getText());
@@ -150,7 +151,7 @@ public class ConfigurarObsequios extends JInternalFrame implements ActionListene
 	}
 	
 	protected void actionPerformedBtnNewButton(ActionEvent e) {
-		grabar();
+		cambiar();
 		JOptionPane.showMessageDialog(null, "Está seguro de cambiar el obsequio?",
                 "",JOptionPane.QUESTION_MESSAGE);
 		
