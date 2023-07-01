@@ -71,9 +71,9 @@ public class AcercadeTienda extends JInternalFrame implements ActionListener {
 		lblAutores_2.setBounds(173, 128, 134, 44);
 		getContentPane().add(lblAutores_2);
 		
-		lblAutores_3 = new JLabel("Joaquin");
+		lblAutores_3 = new JLabel("Joaquin Pomacanchari Rios");
 		lblAutores_3.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblAutores_3.setBounds(165, 169, 134, 44);
+		lblAutores_3.setBounds(147, 169, 174, 44);
 		getContentPane().add(lblAutores_3);
 		
 		btnNewButton = new JButton("Cerrar");
