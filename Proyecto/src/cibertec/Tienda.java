@@ -212,25 +212,36 @@ public class Tienda extends JFrame implements ActionListener {
 		
 	}
 	protected void actionPerformedMntmModificarCeramico(ActionEvent e) {
-		
-		
-		
-		
+		String p=GuiModificarCeramico.modicer;
+		if(p==null) {
+			GuiModificarCeramico modicer=new GuiModificarCeramico();
+			escritorio.add(modicer);
+			modicer.setVisible(true);
+		}
+	
 		
 		
 		
 	}
 	protected void actionPerformedMntmListarCeramicos(ActionEvent e) {
-		
-		
-		
+		String p=GuiListarCeramicos.listacer;
+		if(p==null) {
+			GuiListarCeramicos listacer=new GuiListarCeramicos();
+			escritorio.add(listacer);
+			listacer.setVisible(true);
+			}
 		
 		
 		
 		
 	}
 	protected void actionPerformedMntmVender(ActionEvent e) {
-		
+		String p=Vender.ven;
+		if(p==null) {
+			Vender ven= new Vender();
+			escritorio.add(ven);
+			ven.setVisible(true);
+		}
 		
 		
 		
@@ -238,15 +249,16 @@ public class Tienda extends JFrame implements ActionListener {
 		
 	}
 	protected void actionPerformedMntmGenerarReportes(ActionEvent e) {
+		String p=GenerarReportes.genrep;
+		if(p==null) {
+			GenerarReportes genrep=new GenerarReportes();
+			escritorio.add(genrep);
+			genrep.setVisible(true);
+			
+		}
 		
 		
-		
-		
-		
-		
-		
-		
-		
+
 		
 	}
 	protected void actionPerformedMntmConfigDescuentos(ActionEvent e) {
